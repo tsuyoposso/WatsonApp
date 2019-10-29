@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		957F5446A6EECF265E6D3102 /* Pods_WatsonApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D313E329EBF66DE8D43D3B1 /* Pods_WatsonApp.framework */; };
+		FE6CE17623687BE700C7EE6A /* TImeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6CE17523687BE700C7EE6A /* TImeLineViewController.swift */; };
+		FE6CE17823687BF200C7EE6A /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6CE17723687BF200C7EE6A /* ShareViewController.swift */; };
 		FE9756FC23642FC5009BC4B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9756FB23642FC5009BC4B7 /* AppDelegate.swift */; };
 		FE9756FE23642FC5009BC4B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9756FD23642FC5009BC4B7 /* SceneDelegate.swift */; };
 		FE97570023642FC5009BC4B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9756FF23642FC5009BC4B7 /* ViewController.swift */; };
@@ -16,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D313E329EBF66DE8D43D3B1 /* Pods_WatsonApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatsonApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B57BA928B6EB201A12E10A /* Pods-WatsonApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatsonApp.release.xcconfig"; path = "Target Support Files/Pods-WatsonApp/Pods-WatsonApp.release.xcconfig"; sourceTree = "<group>"; };
+		6A522F4F3B25B9ABED5666F3 /* Pods-WatsonApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatsonApp.debug.xcconfig"; path = "Target Support Files/Pods-WatsonApp/Pods-WatsonApp.debug.xcconfig"; sourceTree = "<group>"; };
+		FE6CE17523687BE700C7EE6A /* TImeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TImeLineViewController.swift; sourceTree = "<group>"; };
+		FE6CE17723687BF200C7EE6A /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		FE9756F823642FC5009BC4B7 /* WatsonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE9756FB23642FC5009BC4B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE9756FD23642FC5009BC4B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				957F5446A6EECF265E6D3102 /* Pods_WatsonApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DC744A4A88DA48EDF1CE31A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A522F4F3B25B9ABED5666F3 /* Pods-WatsonApp.debug.xcconfig */,
+				41B57BA928B6EB201A12E10A /* Pods-WatsonApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F511A18DAE530466327D7105 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D313E329EBF66DE8D43D3B1 /* Pods_WatsonApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FE9756EF23642FC5009BC4B7 = {
 			isa = PBXGroup;
 			children = (
 				FE9756FA23642FC5009BC4B7 /* WatsonApp */,
 				FE9756F923642FC5009BC4B7 /* Products */,
+				2DC744A4A88DA48EDF1CE31A /* Pods */,
+				F511A18DAE530466327D7105 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +88,8 @@
 				FE9756FD23642FC5009BC4B7 /* SceneDelegate.swift */,
 				FE9756FF23642FC5009BC4B7 /* ViewController.swift */,
 				FE97570123642FC5009BC4B7 /* Main.storyboard */,
+				FE6CE17523687BE700C7EE6A /* TImeLineViewController.swift */,
+				FE6CE17723687BF200C7EE6A /* ShareViewController.swift */,
 				FE97570423642FCA009BC4B7 /* Assets.xcassets */,
 				FE97570623642FCA009BC4B7 /* LaunchScreen.storyboard */,
 				FE97570923642FCA009BC4B7 /* Info.plist */,
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE97570C23642FCA009BC4B7 /* Build configuration list for PBXNativeTarget "WatsonApp" */;
 			buildPhases = (
+				52A736276DA1EC8EE0A0E9BB /* [CP] Check Pods Manifest.lock */,
 				FE9756F423642FC5009BC4B7 /* Sources */,
 				FE9756F523642FC5009BC4B7 /* Frameworks */,
 				FE9756F623642FC5009BC4B7 /* Resources */,
+				2BB674FAC8BA89A9671BCFE4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +165,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2BB674FAC8BA89A9671BCFE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatsonApp/Pods-WatsonApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatsonApp/Pods-WatsonApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatsonApp/Pods-WatsonApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52A736276DA1EC8EE0A0E9BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatsonApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FE9756F423642FC5009BC4B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FE97570023642FC5009BC4B7 /* ViewController.swift in Sources */,
+				FE6CE17623687BE700C7EE6A /* TImeLineViewController.swift in Sources */,
+				FE6CE17823687BF200C7EE6A /* ShareViewController.swift in Sources */,
 				FE9756FC23642FC5009BC4B7 /* AppDelegate.swift in Sources */,
 				FE9756FE23642FC5009BC4B7 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +358,7 @@
 		};
 		FE97570D23642FCA009BC4B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A522F4F3B25B9ABED5666F3 /* Pods-WatsonApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +376,7 @@
 		};
 		FE97570E23642FCA009BC4B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41B57BA928B6EB201A12E10A /* Pods-WatsonApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
